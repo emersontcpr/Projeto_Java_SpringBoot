@@ -67,7 +67,7 @@ public class VendedorService {
     public  void  RemoverVendedor(String guid){
         var vendedor = this.vendedorRepository.GetForGuid(guid);
         if (vendedor != null)
-            this.vendedorRepository.delete(vendedor.Id);
+            this.vendedorRepository.delete(vendedor.id);
 
     }
 }
